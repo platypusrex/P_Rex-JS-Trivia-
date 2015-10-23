@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game Board</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/my-styles.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container" id="intro-container">
+      <div id="lead-text">
+        <h1><strong></strong></h1>
+        <p>(press the start button, brainiac....)</p>
+      </div>
+      <div id="start-button">
+        <button type="submit" class="btn btn-success btn-lg" id="start-btn">Start Game</button>
+      </div>
+    </div>
+    <div class="container-full" id="game-container">
+      <div id="time-container">
+        <p class="lead" id="timer"></p>
+      </div>
+      <div class="panel panel-primary">
+        <!-- Default panel contents -->
+        <div class="panel-heading"><strong id="question-number"></strong></div>
+        <div class="panel-body">
+          <p><strong id="question-container"></strong></p>
+        </div>
+
+        <!-- List group -->
+        <ul class="list-group">
+          <li class="list-group-item"><input type="radio" id="chkbox1" name="optradio"><label name="choice"></label></li>
+          <li class="list-group-item"><input type="radio" id="chkbox2" name="optradio" value="b"><label name="choice"></label></li>
+          <li class="list-group-item"><input type="radio" id="chkbox3" name="optradio" value="c"><label name="choice"></label></li>
+          <li class="list-group-item"><input type="radio" id="chkbox4" name="optradio" value="d"><label name="choice"></label></li>
+        </ul>
+      </div>
+      <div id="button-holder">
+       <button type="submit" class="btn btn-warning btn-lg" id="game-submit">Submit Answer</button>
+      </div>
+    </div>
+    <div id="overlay"></div>
+    <!--jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/triv_game4.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+body {
+	/*max-width: 900px;*/
+	padding-top: 10%;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: auto;
+}
+
+#chkbox1,
+#chkbox2,
+#chkbox3,
+#chkbox4 {
+	margin-right: 10px;
+}
+
+.alert {
+	max-width: 400px;
+	margin: auto;
+}
+
+#game-container {
+	max-width: 900px;
+	margin: auto;
+	display: none;
+}
+
+#button-holder,
+#start-button
+ {
+	text-align: center;
+}
+
+#lead-text {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#start-button {
+	padding-bottom: 20px;
+}
+
+#overlay {
+	background: rgba(0, 0, 0, 0.925);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	text-align: left;
+}
+#overlay img {
+	margin-left: 37.5%;
+	margin-top: 10%;
+}
+
+#overlay h1,
+#overlay h3 {
+	text-align: center;
+	color: #fff;
+}
+#time-container p {
+	text-align: center;
+	font-weight: bold;
+}
+

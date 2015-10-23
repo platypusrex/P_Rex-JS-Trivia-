@@ -1,0 +1,11 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongoDB": {
+    "url": "mongodb://localhost/prex_trivia",
+    "name": "mongoDB",
+    "connector": "mongodb"
+  }
+}

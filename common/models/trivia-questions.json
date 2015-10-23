@@ -1,0 +1,44 @@
+{
+  "name": "TriviaQuestions",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "properties": {
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "choices": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    },
+    "answer": {
+      "type": "string",
+      "required": true
+    },
+    "id": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "topicId": {
+      "type": "string",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "topic": {
+      "type": "belongsTo",
+      "model": "Topic",
+      "foreignKey": "topicId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}
